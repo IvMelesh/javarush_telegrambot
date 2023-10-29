@@ -5,7 +5,7 @@ import service.SendMessageBotService;
 
 public class StartCommand implements Command{
     private final SendMessageBotService sendMessageBotService;
-    private static String START_TEXT = "Привет!Я JavaRushBot.Я помогу тебе быть в курсе новых статей"
+    public static String START_TEXT = "Привет!Я JavaRushBot.Я помогу тебе быть в курсе новых статей"
                                         + "на JavaRush";
 
     public StartCommand(SendMessageBotService sendMessageBotService){

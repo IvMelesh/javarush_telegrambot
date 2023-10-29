@@ -5,7 +5,7 @@ import service.SendMessageBotService;
 
 public class UnknownCommand implements Command{
     private final SendMessageBotService sendMessageBotService;
-    private  static String UNKNOWN_COMMAND_TEXT = "Неизвестная команда, я еще таких не выучил\n"
+    public   static String UNKNOWN_COMMAND_TEXT = "Неизвестная команда, я еще таких не выучил\n"
             + "Введите команду заново или посмотрите доступные команды(/help)";
 
     public UnknownCommand(SendMessageBotService sendMessageBotService) {

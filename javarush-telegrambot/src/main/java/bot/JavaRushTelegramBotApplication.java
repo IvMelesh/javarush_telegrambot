@@ -9,6 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class JavaRushTelegramBotApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(JavaRushTelegramBotApplication.class, args);
 	}
 }

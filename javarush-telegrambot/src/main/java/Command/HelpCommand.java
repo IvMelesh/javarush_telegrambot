@@ -7,7 +7,7 @@ import static Command.Commands.*;
 
 public class HelpCommand implements Command{
     private final SendMessageBotService sendMessageBotService;
-    private static String HELP_TEXT = String.format("<b>Доступные команды для работы</b>\n"
+    public static String HELP_TEXT = String.format("<b>Доступные команды для работы</b>\n"
     +"%s - начало работы\n"
     +"%s - окончание работы\n"
     +"%s - справочник команд",

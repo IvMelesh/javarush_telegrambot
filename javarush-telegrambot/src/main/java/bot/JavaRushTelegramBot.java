@@ -29,6 +29,7 @@ public class JavaRushTelegramBot extends TelegramLongPollingBot {
     private final CommandContainer commandContainer;
 
     public JavaRushTelegramBot(){
+
         this.commandContainer = new CommandContainer(new SendMessageBotServiceImp(this));
     }
 
