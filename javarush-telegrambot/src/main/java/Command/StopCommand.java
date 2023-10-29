@@ -6,7 +6,7 @@ import service.SendMessageBotService;
 public class StopCommand implements Command{
     private final SendMessageBotService sendMessageBotService;
 
-    private static String STOP_TEXT = "Деактивировал все ваши подписки";
+    public static String STOP_TEXT = "Деактивировал все ваши подписки";
 
     public StopCommand(SendMessageBotService sendMessageBotService) {
         this.sendMessageBotService = sendMessageBotService;

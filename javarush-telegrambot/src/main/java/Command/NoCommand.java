@@ -5,7 +5,7 @@ import service.SendMessageBotService;
 
 public class NoCommand implements Command{
     private final SendMessageBotService sendMessageBotService;
-    private static String NO_COMMAND_TEXT = "Я умею работать только с командами начинающимися с (/)\n"
+    public static String NO_COMMAND_TEXT = "Я умею работать только с командами начинающимися с (/)\n"
                                     +"Попробуйте еще раз.У Вас все получится!!!";
 
     public NoCommand(SendMessageBotService sendMessageBotService) {
