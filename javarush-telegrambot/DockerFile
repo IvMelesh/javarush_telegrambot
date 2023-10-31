@@ -1,6 +1,0 @@
-FROM adoptopenjdk/openjdk11:ubi
-ARG JAR_FILE=target/*.jar
-ENV BOT_NAME=example_jr_bot
-ENV BOT_TOKEN=6732321384:AAGdpKmCz1YXWoLDcJKKXyNJQ-1wK22cIqs
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-DBot.username=${BOT_NAME}","-DBot.token=${BOT_TOKEN}", "-jar", "/app.jar"]
