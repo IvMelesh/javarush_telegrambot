@@ -1,9 +1,9 @@
-package Command;
+package command;
 
 import org.telegram.telegrambots.meta.api.objects.Update;
 import service.SendMessageBotService;
 
-import static Command.Commands.*;
+import static command.Commands.*;
 
 public class HelpCommand implements Command{
     private final SendMessageBotService sendMessageBotService;

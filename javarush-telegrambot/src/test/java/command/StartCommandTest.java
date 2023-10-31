@@ -1,8 +1,7 @@
 package command;
 
-import static Command.StartCommand.START_TEXT;
-import static Command.Commands.START;
-import Command.*;
+import static command.StartCommand.START_TEXT;
+import static command.Commands.START;
 
 public class StartCommandTest extends AbstractCommandTest{
     @Override

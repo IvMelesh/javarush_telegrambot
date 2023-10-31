@@ -1,6 +1,5 @@
 package command;
 
-import Command.Command;
 import bot.JavaRushTelegramBot;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
