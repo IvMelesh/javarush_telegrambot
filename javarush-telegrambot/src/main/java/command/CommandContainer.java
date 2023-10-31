@@ -1,11 +1,10 @@
-package Command;
+package command;
 
 
 import com.google.common.collect.ImmutableMap;
-import org.springframework.stereotype.Component;
 import service.SendMessageBotService;
 
-import static Command.Commands.*;
+import static command.Commands.*;
 
 public class CommandContainer {
     private final ImmutableMap<String, Command> commandMap;

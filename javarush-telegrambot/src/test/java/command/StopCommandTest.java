@@ -1,8 +1,7 @@
 package command;
 
-import Command.*;
-import static Command.Commands.STOP;
-import static Command.StopCommand.STOP_TEXT;
+import static command.Commands.STOP;
+import static command.StopCommand.STOP_TEXT;
 
 public class StopCommandTest extends AbstractCommandTest{
     @Override

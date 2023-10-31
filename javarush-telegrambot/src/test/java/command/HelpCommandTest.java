@@ -1,9 +1,7 @@
 package command;
 
-import Command.*;
-
-import static Command.Commands.HELP;
-import static Command.HelpCommand.HELP_TEXT;
+import static command.Commands.HELP;
+import static command.HelpCommand.HELP_TEXT;
 
 public class HelpCommandTest  extends AbstractCommandTest{
     @Override

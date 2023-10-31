@@ -1,20 +1,13 @@
 package bot;
 
-import Command.CommandContainer;
-import Command.Commands;
+import command.CommandContainer;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
-import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
-import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import service.SendMessageBotService;
 import service.SendMessageBotServiceImp;
 
-import java.util.Locale;
-
-import static Command.Commands.NO;
+import static command.Commands.NO;
 
 @Component
 public class JavaRushTelegramBot extends TelegramLongPollingBot {
