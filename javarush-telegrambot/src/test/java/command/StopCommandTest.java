@@ -1,7 +1,10 @@
 package command;
 
-import static command.Commands.STOP;
-import static command.StopCommand.STOP_TEXT;
+import jrtb.command.Command;
+import jrtb.command.StopCommand;
+
+import static jrtb.command.Commands.STOP;
+import static jrtb.command.StopCommand.STOP_TEXT;
 
 public class StopCommandTest extends AbstractCommandTest{
     @Override

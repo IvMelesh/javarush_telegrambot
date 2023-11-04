@@ -1,11 +1,15 @@
 package command;
 
+import jrtb.command.Command;
+import jrtb.command.CommandContainer;
+import jrtb.command.Commands;
+import jrtb.command.UnknownCommand;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-import service.SendMessageBotService;
+import jrtb.service.SendMessageBotService;
 
 import java.util.Arrays;
 

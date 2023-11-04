@@ -1,17 +1,16 @@
-package command;
+package jrtb.command;
 
 import org.telegram.telegrambots.meta.api.objects.Update;
-import service.SendMessageBotService;
-
-import static command.Commands.*;
+import jrtb.service.SendMessageBotService;
 
 public class HelpCommand implements Command{
     private final SendMessageBotService sendMessageBotService;
     public static String HELP_TEXT = String.format("<b>Доступные команды для работы</b>\n"
     +"%s - начало работы\n"
     +"%s - окончание работы\n"
-    +"%s - справочник команд",
-            START.getCommandName(), STOP.getCommandName(), HELP.getCommandName());
+    +"%s - справочник команд\n"
+                    +"%s - статистика",
+            Commands.START.getCommandName(), Commands.STOP.getCommandName(), Commands.HELP.getCommandName(), Commands.STAT.getCommandName());
 
     public HelpCommand(SendMessageBotService sendMessageBotService) {
         this.sendMessageBotService = sendMessageBotService;

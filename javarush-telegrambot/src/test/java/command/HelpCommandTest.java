@@ -1,7 +1,10 @@
 package command;
 
-import static command.Commands.HELP;
-import static command.HelpCommand.HELP_TEXT;
+import jrtb.command.Command;
+import jrtb.command.HelpCommand;
+
+import static jrtb.command.Commands.HELP;
+import static jrtb.command.HelpCommand.HELP_TEXT;
 
 public class HelpCommandTest  extends AbstractCommandTest{
     @Override

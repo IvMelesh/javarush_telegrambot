@@ -1,7 +1,10 @@
 package command;
 
-import static command.StartCommand.START_TEXT;
-import static command.Commands.START;
+import jrtb.command.Command;
+import jrtb.command.StartCommand;
+
+import static jrtb.command.StartCommand.START_TEXT;
+import static jrtb.command.Commands.START;
 
 public class StartCommandTest extends AbstractCommandTest{
     @Override

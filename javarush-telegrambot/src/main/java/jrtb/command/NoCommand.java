@@ -1,7 +1,7 @@
-package command;
+package jrtb.command;
 
 import org.telegram.telegrambots.meta.api.objects.Update;
-import service.SendMessageBotService;
+import jrtb.service.SendMessageBotService;
 
 public class NoCommand implements Command{
     private final SendMessageBotService sendMessageBotService;

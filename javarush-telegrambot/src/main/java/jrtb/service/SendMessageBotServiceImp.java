@@ -1,6 +1,6 @@
-package service;
+package jrtb.service;
 
-import bot.JavaRushTelegramBot;
+import jrtb.bot.JavaRushTelegramBot;
 import org.jvnet.hk2.annotations.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;

@@ -1,7 +1,10 @@
 package command;
 
-import static command.Commands.NO;
-import static command.NoCommand.NO_COMMAND_TEXT;
+import jrtb.command.Command;
+import jrtb.command.NoCommand;
+
+import static jrtb.command.Commands.NO;
+import static jrtb.command.NoCommand.NO_COMMAND_TEXT;
 
 
 public class NoCommandTest extends AbstractCommandTest{
