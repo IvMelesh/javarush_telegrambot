@@ -1,9 +1,9 @@
 package jrtb.javarushclient;
 
-import jrtb.javarushclient.dto.GroupCountRequestArgs;
+import jrtb.javarushclient.dto.GroupRequestArgs;
 import jrtb.javarushclient.dto.GroupDiscussionInfo;
 import jrtb.javarushclient.dto.GroupInfo;
-import jrtb.javarushclient.dto.GroupRequestArgs;
+import jrtb.javarushclient.dto.GroupCountRequestArgs;
 import kong.unirest.GenericType;
 import kong.unirest.Unirest;
 import org.springframework.beans.factory.annotation.Value;
@@ -40,7 +40,8 @@ public class JavaRushGroupClientImp implements JavaRushGroupClient{
 
     @Override
     public Integer getGroupCount(GroupCountRequestArgs groupCountRequestArgs) {
-        return Integer.valueOf(Unirest.get(String.format("%s/count", javarushApiGroupPath))
+        return Integer.valueOf(
+                Unirest.get(String.format("%s/count", javarushApiGroupPath))
                 .queryString(groupCountRequestArgs.populateQueries())
                 .asString()
                 .getBody()
@@ -49,7 +50,7 @@ public class JavaRushGroupClientImp implements JavaRushGroupClient{
 
     @Override
     public GroupDiscussionInfo getGroupById(Integer id) {
-        return Unirest.get(String.format("%s/groups/group%s",javarushApiGroupPath,id.toString()))
+        return Unirest.get(String.format("%s/group%s",javarushApiGroupPath,id.toString()))
                 .asObject(GroupDiscussionInfo.class)
                 .getBody();
     }

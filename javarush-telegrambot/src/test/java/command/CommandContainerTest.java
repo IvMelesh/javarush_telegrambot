@@ -4,6 +4,7 @@ import jrtb.command.Command;
 import jrtb.command.CommandContainer;
 import jrtb.command.Commands;
 import jrtb.command.UnknownCommand;
+import jrtb.service.TelegramUserService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -16,11 +17,13 @@ import java.util.Arrays;
 @DisplayName("Unit-lvl testing for CommandContainer")
 public class CommandContainerTest {
     private CommandContainer commandContainer;
+    private TelegramUserService telegramUserService;
 
     @BeforeEach
     public void init(){
         SendMessageBotService sendMessageBotService = Mockito.mock(SendMessageBotService.class);
-        commandContainer = new CommandContainer(sendMessageBotService);
+        TelegramUserService telegramUserService1 = Mockito.mock(TelegramUserService.class);
+        commandContainer = new CommandContainer(sendMessageBotService, telegramUserService1);
     }
 @Test
     public void shouldGetAllTheExistingCommands(){

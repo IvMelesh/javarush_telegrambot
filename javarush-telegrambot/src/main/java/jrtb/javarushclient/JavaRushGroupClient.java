@@ -1,9 +1,9 @@
 package jrtb.javarushclient;
 
-import jrtb.javarushclient.dto.GroupCountRequestArgs;
+import jrtb.javarushclient.dto.GroupRequestArgs;
 import jrtb.javarushclient.dto.GroupDiscussionInfo;
 import jrtb.javarushclient.dto.GroupInfo;
-import jrtb.javarushclient.dto.GroupRequestArgs;
+import jrtb.javarushclient.dto.GroupCountRequestArgs;
 
 import java.util.List;
 
