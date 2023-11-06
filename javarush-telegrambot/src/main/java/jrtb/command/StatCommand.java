@@ -1,5 +1,6 @@
 package jrtb.command;
 
+import jrtb.javarushclient.JavaRushGroupClientImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import jrtb.service.SendMessageBotService;
@@ -10,7 +11,7 @@ public class StatCommand implements Command{
     private final SendMessageBotService sendMessageBotService;
     private final TelegramUserService telegramUserService;
 
-    public final static String STAT_TEXT = "Бот используют %s человек.";
+    public final static String STAT_TEXT = "Бот используют %s человек." ;
     @Autowired
     public StatCommand(SendMessageBotService sendMessageBotService, TelegramUserService telegramUserService) {
         this.sendMessageBotService = sendMessageBotService;
