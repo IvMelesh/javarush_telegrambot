@@ -11,7 +11,7 @@ public class StatCommand implements Command{
     private final SendMessageBotService sendMessageBotService;
     private final TelegramUserService telegramUserService;
 
-    public final static String STAT_TEXT = "Бот используют %s человек." ;
+    public  static String STAT_TEXT = "Бот используют %s человек." ;
     @Autowired
     public StatCommand(SendMessageBotService sendMessageBotService, TelegramUserService telegramUserService) {
         this.sendMessageBotService = sendMessageBotService;
@@ -20,8 +20,8 @@ public class StatCommand implements Command{
 
     @Override
     public void execute(Update update) {
-        int actineUsersCount = telegramUserService.retrieveAllActiveUsers().size();
-        sendMessageBotService.sendMessage(update.getMessage().getChatId().toString(),String.format(STAT_TEXT, actineUsersCount));
+        int activeUsersCount = telegramUserService.retrieveAllActiveUsers().size();
+        sendMessageBotService.sendMessage(update.getMessage().getChatId().toString(),String.format(STAT_TEXT, activeUsersCount));
 
     }
 }
