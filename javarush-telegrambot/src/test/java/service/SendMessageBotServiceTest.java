@@ -1,6 +1,8 @@
 package service;
 
-import bot.JavaRushTelegramBot;
+import jrtb.bot.JavaRushTelegramBot;
+import jrtb.service.SendMessageBotService;
+import jrtb.service.SendMessageBotServiceImp;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -10,7 +12,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 @DisplayName("Unit-lvl testing for SendMessageBotService")
 public class SendMessageBotServiceTest {
-    private  SendMessageBotService sendMessageBotService;
+    private SendMessageBotService sendMessageBotService;
     private  JavaRushTelegramBot javaRushTelegramBot;
 
     @BeforeEach

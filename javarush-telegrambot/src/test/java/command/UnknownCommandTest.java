@@ -1,6 +1,9 @@
 package command;
 
-import static command.UnknownCommand.UNKNOWN_COMMAND_TEXT;
+import jrtb.command.Command;
+import jrtb.command.UnknownCommand;
+
+import static jrtb.command.UnknownCommand.UNKNOWN_COMMAND_TEXT;
 
 public class UnknownCommandTest extends AbstractCommandTest{
     @Override
